@@ -12,6 +12,10 @@ body {
 	font-size: 17px;
 	min-width: 460px;
 }
+body, html {
+   
+    height: 100%;
+}
 .container {
   
   display: grid;
@@ -60,12 +64,16 @@ article{
 
 footer {
 	grid-area: footer;
-	height: 300px;
+	height: 400px;
 	background: #926239;
 	color: #fff;
 	padding: 10px 10px;
 	display: grid;
+	grid-template-columns: 1fr;
+	grid-auto-rows: auto;
 	justify-content: center;
+	align-items: center;
+
 }
 #showcase hi {
 	font-size: 50px;
@@ -112,6 +120,10 @@ background: #f9f9f9;
 	grid-gap:5px;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto;
+}
+.copy-rights{
+ justify-content: center;
+ margin: 5px auto;
 }
 .social a {
 	text-decoration: none;
